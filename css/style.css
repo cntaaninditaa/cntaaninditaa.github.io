@@ -3,7 +3,7 @@
     font-family: 'Poppins',cursive;
 }
 :root {
-  --clr-neon: hsl(317 100% 54%);
+  --clr-neon: hsl(310, 92%, 49%);
   --clr-bg: hsl(323 21% 16%);
 }
 
@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 .greetings{
     font-size: 6rem;
@@ -70,7 +70,7 @@ body{
   text-decoration: none;
   color: var(--clr-neon);
   border: var(--clr-neon) 0.125em solid;
-  padding: 0.25em 3em;
+  padding: 0.25em 10em;
   border-radius: 0.25em;
 
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
@@ -83,12 +83,11 @@ body{
 .neon-button::before {
   pointer-events: none;
   content: "";
-  position: absolute;
   background: var(--clr-neon);
   top: 120%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 200%;
 
   transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
   filter: blur(1em);
